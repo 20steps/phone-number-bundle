@@ -85,6 +85,9 @@ class PhoneNumberNormalizer implements NormalizerInterface, DenormalizerInterfac
      */
     public function denormalize($data, $class, $format = null, array $context = array())
     {
+    	if ($data==null || $data=='') {
+    		return null;
+	    }
         try {
             return $this->phoneNumberUtil->parse($data, $this->region);
         } catch (NumberParseException $e) {
