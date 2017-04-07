@@ -1,5 +1,5 @@
 {
-    "name": "misd/phone-number-bundle",
+    "name": "20steps/phone-number-bundle",
     "type": "symfony-bundle",
     "description": "Integrates libphonenumber into your Symfony2 application",
     "keywords": ["bundle", "phone-number", "phonenumber", "telephone number", "libphonenumber"],
@@ -10,7 +10,7 @@
     },
     "require": {
         "php": ">=5.3.3",
-        "giggsey/libphonenumber-for-php": "~5.7|~6.0|~7.0|~8.0",
+        "20steps/libphonenumber-for-php": "dev-master",
         "symfony/framework-bundle": "~2.1|~3.0"
     },
     "require-dev": {
